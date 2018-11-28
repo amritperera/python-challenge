@@ -1,9 +1,7 @@
 import pandas
 
 bd =  pandas.read_csv('budget_data.csv')
-
 total_months = (len(bd.index))
-
 running_total = 0
 
 #Total Net Profit/Loss Calculation
