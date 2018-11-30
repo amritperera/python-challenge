@@ -44,3 +44,18 @@ print(f"Total: ${running_total}")
 print(f"Average Change: {average_change}")
 print(f"Greatest Increase in Profits: {date} (${g_inc})")
 print(f"Greatest Decrease in Profits: {date2} (${g_dec})")
+
+#Output to New text file if there isn't one already
+f = open("Financial Analysis.txt","w+")
+
+f.write("")
+f.write("Financial Analysis\r\n")
+f.write("----------------------------\r\n")
+
+f.write(f"Total Months: {total_months}\r\n")
+f.write(f"Total: ${running_total}\r\n")
+f.write(f"Average Change: {average_change}\r\n")
+f.write(f"Greatest Increase in Profits: {date} (${g_inc})\r\n")
+f.write(f"Greatest Decrease in Profits: {date2} (${g_dec})\r\n")
+
+f.close()
