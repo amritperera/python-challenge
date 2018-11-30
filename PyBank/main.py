@@ -1,6 +1,9 @@
 import pandas
+import os
 
-bd =  pandas.read_csv('budget_data.csv')
+csvpath = os.path.join('..','Resources','budget_data.csv')
+
+bd =  pandas.read_csv(csvpath)
 total_months = (len(bd.index))
 running_total = 0
 

@@ -1,6 +1,8 @@
 import pandas
+import os
 
-pd =  pandas.read_csv('election_data.csv')
+csvpath = os.path.join('..','Resources','election_data.csv')
+pd =  pandas.read_csv(csvpath)
 total_votes = (len(pd.index))
 
 #Output of Total Votes
